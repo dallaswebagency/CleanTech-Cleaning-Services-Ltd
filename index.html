@@ -131,18 +131,10 @@ h2 .ital{font-size:1.06em;color:var(--leaf)}
 .tile:hover .go{background:var(--leaf);transform:rotate(-45deg)}
 .t1 .art{background:url(assets/img/carpet.jpg) center/cover}
 .t1 .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(63,179,111,.0),rgba(14,59,45,.25))}
-.t2 .art{background:radial-gradient(circle at 30% 20%,#17614a,var(--forest) 70%)}
-.t2 .art svg{position:absolute;left:50%;top:36%;width:84%;transform:translate(-50%,-50%);stroke:var(--lime);fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
-.t3 .art{background:var(--leaf)}
-.t3 .art::before{content:"";position:absolute;inset:-30%;background-image:linear-gradient(rgba(255,255,255,.55) 5px,transparent 5px),linear-gradient(90deg,rgba(255,255,255,.55) 5px,transparent 5px);background-size:84px 84px;transform:rotate(-12deg)}
-.t3 .art::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.55),transparent 45%)}
-.t4 .art{background:linear-gradient(160deg,#eaf8fd,var(--sky))}
-.t4 .panes{position:absolute;left:12%;right:12%;top:9%;height:58%;display:grid;grid-template-columns:1fr 1fr;gap:9px;background:var(--forest);padding:9px;border-radius:14px;box-shadow:0 18px 30px -18px rgba(14,59,45,.6)}
-.t4 .panes i{background:linear-gradient(135deg,#fff 0 18%,#bfe6f3 19% 40%,#8fd0e6 100%);border-radius:6px;position:relative;overflow:hidden}
-.t4 .panes i::after{content:"";position:absolute;top:-20%;left:-60%;width:40%;height:140%;background:rgba(255,255,255,.7);transform:rotate(18deg);animation:shine 4.5s ease-in-out infinite}
-@keyframes shine{0%,55%{left:-60%}100%{left:130%}}
-.spark{position:absolute;width:34px;height:34px;fill:#fff;filter:drop-shadow(0 4px 6px rgba(14,59,45,.25));animation:tw 2.6s ease-in-out infinite alternate}
-@keyframes tw{from{transform:scale(.7) rotate(0)}to{transform:scale(1.15) rotate(25deg)}}
+.t2 .art{background:url(assets/img/service-upholstery.jpg) 45% 40%/cover}
+.t3 .art{background:url(assets/img/service-tile.jpg) 50% 40%/cover}
+.t3 .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(14,59,45,.18))}
+.t4 .art{background:url(assets/img/service-window.jpg) 35% 40%/cover}
 .svc-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 
 /* ---------- bento ---------- */
@@ -254,7 +246,7 @@ footer.site .bottom a.dg{border-bottom:2px solid var(--leaf)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .bub,.chip,.badge svg.ring,.spark,.phone i,.t4 .panes i::after{animation:none}
+  .bub,.chip,.badge svg.ring,.phone i{animation:none}
   .js .rv{opacity:1;transform:none;transition:none}
   *{transition-duration:.01ms!important}
 }
@@ -337,23 +329,18 @@ footer.site .bottom a.dg{border-bottom:2px solid var(--leaf)}
           <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="tile t2 rv" href="https://www.cleantech-calgary.com/services/">
-        <div class="art" aria-hidden="true">
-          <svg viewBox="0 0 220 160"><rect x="40" y="32" width="140" height="56" rx="18"/><rect x="26" y="74" width="168" height="44" rx="14"/><rect x="8" y="58" width="36" height="66" rx="16"/><rect x="176" y="58" width="36" height="66" rx="16"/><path d="M36 124v14M184 124v14"/></svg>
-        </div>
+        <div class="art" aria-hidden="true"></div>
         <div class="txt"><div><h3>Upholstery cleaning</h3><p>Good for the environment, safe for children and pets.</p></div>
           <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="tile t3 rv" href="https://www.cleantech-calgary.com/services/">
         <div class="art" aria-hidden="true"></div>
-        <svg class="spark" style="left:62%;top:22%" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"/></svg>
-        <svg class="spark" style="left:22%;top:46%;width:22px;height:22px;animation-delay:-1s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"/></svg>
         <span class="ribbon">Now offered</span>
         <div class="txt"><div><h3>Tile and grout cleaning</h3><p>Now offered alongside carpet and upholstery.</p></div>
           <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="tile t4 rv" href="https://www.cleantech-calgary.com/services/">
-        <div class="art" aria-hidden="true"><div class="panes"><i></i><i></i><i></i><i></i></div></div>
-        <svg class="spark" style="right:10%;top:12%;fill:#fff" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"/></svg>
+        <div class="art" aria-hidden="true"></div>
         <span class="ribbon">Now offered</span>
         <div class="txt"><div><h3>Window cleaning</h3><p>Now offered alongside carpet and upholstery.</p></div>
           <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
